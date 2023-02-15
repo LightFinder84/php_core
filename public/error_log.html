@@ -8,3 +8,33 @@ Stack trace:
 #5 /home/truong/Documents/github/web_projects/PHP_Core/public/index.php(22): Application->run()
 #6 {main}
   thrown in /home/truong/Documents/github/web_projects/PHP_Core/core/View.php on line 34" while reading response header from upstream, client: 127.0.0.1, server: phpcore.localtest.me, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php8.1-fpm.sock:", host: "phpcore.localtest.me"
+2023/02/08 22:35:14 [error] 12292#12292: *26 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/home/truong/Documents/github/web_projects/PHP_Core/view/homeView.php): Failed to open stream: No such file or directory in /home/truong/Documents/github/web_projects/php_core/core/View.php on line 34PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/truong/Documents/github/web_projects/PHP_Core/view/homeView.php' (include_path='.:/usr/share/php') in /home/truong/Documents/github/web_projects/php_core/core/View.php:34
+Stack trace:
+#0 /home/truong/Documents/github/web_projects/php_core/core/View.php(13): View->viewContent()
+#1 /home/truong/Documents/github/web_projects/php_core/core/Response.php(20): View->renderUserView()
+#2 /home/truong/Documents/github/web_projects/php_core/controller/HomeController.php(10): Response->renderUserView()
+#3 /home/truong/Documents/github/web_projects/php_core/core/Router.php(83): HomeController->showHomePage()
+#4 /home/truong/Documents/github/web_projects/php_core/core/Application.php(44): Router->resolve()
+#5 /home/truong/Documents/github/web_projects/php_core/public/index.php(22): Application->run()
+#6 {main}
+  thrown in /home/truong/Documents/github/web_projects/php_core/core/View.php on line 34" while reading response header from upstream, client: 127.0.0.1, server: phpcore.localtest.me, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php8.1-fpm.sock:", host: "phpcore.localtest.me"
+2023/02/08 22:35:17 [error] 12292#12292: *26 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/home/truong/Documents/github/web_projects/PHP_Core/view/homeView.php): Failed to open stream: No such file or directory in /home/truong/Documents/github/web_projects/php_core/core/View.php on line 34PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/truong/Documents/github/web_projects/PHP_Core/view/homeView.php' (include_path='.:/usr/share/php') in /home/truong/Documents/github/web_projects/php_core/core/View.php:34
+Stack trace:
+#0 /home/truong/Documents/github/web_projects/php_core/core/View.php(13): View->viewContent()
+#1 /home/truong/Documents/github/web_projects/php_core/core/Response.php(20): View->renderUserView()
+#2 /home/truong/Documents/github/web_projects/php_core/controller/HomeController.php(10): Response->renderUserView()
+#3 /home/truong/Documents/github/web_projects/php_core/core/Router.php(83): HomeController->showHomePage()
+#4 /home/truong/Documents/github/web_projects/php_core/core/Application.php(44): Router->resolve()
+#5 /home/truong/Documents/github/web_projects/php_core/public/index.php(22): Application->run()
+#6 {main}
+  thrown in /home/truong/Documents/github/web_projects/php_core/core/View.php on line 34" while reading response header from upstream, client: 127.0.0.1, server: phpcore.localtest.me, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php8.1-fpm.sock:", host: "phpcore.localtest.me"
+2023/02/08 22:56:44 [error] 14819#14819: *40 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "server_name" in /home/truong/Documents/github/web_projects/php_core/core/Application.php on line 19PHP message: PHP Warning:  Undefined array key "root_path" in /home/truong/Documents/github/web_projects/php_core/core/Application.php on line 20PHP message: PHP Warning:  require_once(/view/homeView.php): Failed to open stream: No such file or directory in /home/truong/Documents/github/web_projects/php_core/core/View.php on line 34PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/view/homeView.php' (include_path='.:/usr/share/php') in /home/truong/Documents/github/web_projects/php_core/core/View.php:34
+Stack trace:
+#0 /home/truong/Documents/github/web_projects/php_core/core/View.php(13): View->viewContent()
+#1 /home/truong/Documents/github/web_projects/php_core/core/Response.php(20): View->renderUserView()
+#2 /home/truong/Documents/github/web_projects/php_core/controller/HomeController.php(10): Response->renderUserView()
+#3 /home/truong/Documents/github/web_projects/php_core/core/Router.php(83): HomeController->showHomePage()
+#4 /home/truong/Documents/github/web_projects/php_core/core/Application.php(45): Router->resolve()
+#5 /home/truong/Documents/github/web_projects/php_core/public/index.php(22): Application->run()
+#6 {main}
+  thrown in /home/truong/Documents/github/web_projects/php_core/core/View.php on line 34" while reading response header from upstream, client: 127.0.0.1, server: phpcore.localtest.me, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php8.1-fpm.sock:", host: "phpcore.localtest.me"

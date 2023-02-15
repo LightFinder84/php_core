@@ -5,9 +5,9 @@
     class Application{
         
         public Router $router;
-        public static $server_name = "phpcore.localtest.me";
+        public static $server_name;
         public static $protocol = "http://";
-        public static $rootPath = "/home/truong/Documents/github/web_projects/PHP_Core";
+        public static $rootPath;
         public static Database $database;
         public static Session $session;
         public static $user = null;
@@ -16,7 +16,8 @@
             $this->router = new Router();
             self::$database = new Database($config["databases"]);
             self::$session = new Session();
-
+            static::$server_name = $_ENV["server_name"];
+            static::$rootPath = $_ENV["root_path"];
             if($id = self::$session->get('user')){
                 static::$user = UserModel::selectOne(where_clause:["logicOperator"=>"none", "conditions"=>[['id', " = ", $id]]]);
             }
